@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding-top: 50px;
+        }
+
+        .welcome-section {
+            text-align: center;
+            background-color: #000000;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome-section h2 {
+            font-size: 2em;
+        }
+
+        .welcome-section p {
+            font-size: 1.2em;
+        }
+
+        /* Button Styling */
+        .btn-custom {
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #000000;
+            color: white;
+        }
+
+        .btn-logout {
+            background-color: #ff5c5c;
+            margin-top: 20px;
+        }
+
+        .btn-logout:hover {
+            background-color: #ff2b2b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-section">
+            <h2>Welcome, {{.Name}}</h2>
+            <p>We're glad to have you here. Enjoy your experience!</p>
+            <!-- Logout Button -->
+            <a href="/logout" class="btn btn-logout">Logout</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
